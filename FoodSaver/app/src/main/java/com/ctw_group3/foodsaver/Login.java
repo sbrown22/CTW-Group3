@@ -3,6 +3,7 @@ package com.ctw_group3.foodsaver;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -30,11 +31,13 @@ public class Login extends AppCompatActivity {
     }
 
     public void login(View view) {
+        // Pull email and password from EditTexts
         EditText emailInput = findViewById(R.id.LoginEmailInput);
         String email = emailInput.getText().toString();
         EditText passwordInput = findViewById(R.id.LoginPasswordInput);
         String password = passwordInput.getText().toString();
 
+        // User login
         mAuth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                 @Override
@@ -42,7 +45,7 @@ public class Login extends AppCompatActivity {
                     if (task.isSuccessful()) {
                         // Sign in success, update UI with the signed-in user's information
                         Log.d(TAG, "signInWithEmail:success");
-                        FirebaseUser user = mAuth.getCurrentUser();
+                        loadUser();
                     } else {
                         // If sign in fails, display a message to the user.
                         Log.w(TAG, "signInWithEmail:failure", task.getException());
@@ -51,5 +54,10 @@ public class Login extends AppCompatActivity {
                     }
                 }
             });
+    }
+
+    public void loadUser() {
+        Intent intent = new Intent(this, User.class);
+        startActivity(intent);
     }
 }

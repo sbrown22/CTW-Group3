@@ -16,6 +16,11 @@
     <!--  Login Activity  -->
     <string name="login_btn">Login</string>
 
+    <!--  User Activity  -->
+    <string name="user_email">Your Email:</string>
+    <string name="user_uid">UID:</string>
+    <string name="user_sign_out">Sign Out</string>
+
     <!--  Posts Activity  -->
     <string name="posts_label">Posts</string>
 </resources>
