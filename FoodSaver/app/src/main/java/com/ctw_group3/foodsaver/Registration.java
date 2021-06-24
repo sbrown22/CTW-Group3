@@ -66,7 +66,5 @@ public class Registration extends AppCompatActivity {
             passwordError = findViewById(R.id.PasswordError);
             passwordError.setText("Ensure both passwords are the same");
         }
-
-
     }
 }

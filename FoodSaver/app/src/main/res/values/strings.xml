@@ -3,6 +3,7 @@
 
     <!--  Main Activity  -->
     <string name="posts_btn">View Posts</string>
+    <string name="login_btn">Owner Login</string>
     <string name="registration_btn">Owner Registration</string>
 
     <!--  Registration Activity  -->
