@@ -7,6 +7,18 @@
     tools:context=".Login">
 
     <TextView
+        android:id="@+id/LoginError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/design_default_color_error"
+        app:layout_constraintBottom_toTopOf="@+id/LoginEmailLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.759" />
+
+    <TextView
         android:id="@+id/LoginEmailLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -60,6 +72,7 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="login"
         android:text="@string/login_btn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
