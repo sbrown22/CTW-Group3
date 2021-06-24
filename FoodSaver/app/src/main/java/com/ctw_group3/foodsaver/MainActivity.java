@@ -19,4 +19,14 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Registration.class);
         startActivity(intent);
     }
+
+    public void loadLogin(View view) {
+        Intent intent = new Intent(this, Login.class);
+        startActivity(intent);
+    }
+
+    public void loadPosts(View view) {
+        Intent intent = new Intent(this, Posts.class);
+        startActivity(intent);
+    }
 }
