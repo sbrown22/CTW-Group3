@@ -25,6 +25,7 @@
         android:id="@+id/PostsButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="loadPosts"
         android:text="@string/posts_btn"
         app:layout_constraintBottom_toTopOf="@+id/LoginButton"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,7 +38,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:text="@string/login_btn"
+        android:onClick="loadLogin"
+        android:text="@string/owner_login_btn"
         app:layout_constraintBottom_toTopOf="@+id/RegistrationButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

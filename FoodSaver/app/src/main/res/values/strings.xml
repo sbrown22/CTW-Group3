@@ -3,7 +3,7 @@
 
     <!--  Main Activity  -->
     <string name="posts_btn">View Posts</string>
-    <string name="login_btn">Owner Login</string>
+    <string name="owner_login_btn">Owner Login</string>
     <string name="registration_btn">Owner Registration</string>
 
     <!--  Registration Activity  -->
@@ -12,4 +12,15 @@
     <string name="confirm_password_label">Confirm Password:</string>
     <string name="email_error"></string>
     <string name="password_error"></string>
+
+    <!--  Login Activity  -->
+    <string name="login_btn">Login</string>
+
+    <!--  User Activity  -->
+    <string name="user_email">Your Email:</string>
+    <string name="user_uid">UID:</string>
+    <string name="user_sign_out">Sign Out</string>
+
+    <!--  Posts Activity  -->
+    <string name="posts_label">Posts</string>
 </resources>
